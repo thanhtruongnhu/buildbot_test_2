@@ -1,0 +1,265 @@
+{
+  "component_field_tolerances": [
+    {
+      "component_id": "80b4913a37eb44eda957a798ccc66b1f", 
+      "subdomain_lower_limit_map": {}, 
+      "subdomain_upper_limit_map": {}
+    }, 
+    {
+      "component_id": "a8fadfb1ea8f4fbab9d6dec74ad0dc06", 
+      "subdomain_lower_limit_map": {}, 
+      "subdomain_upper_limit_map": {}
+    }, 
+    {
+      "component_id": "4a3e3098162543e286622df0d470338c", 
+      "subdomain_lower_limit_map": {}, 
+      "subdomain_upper_limit_map": {}
+    }
+  ], 
+  "component_system": {
+    "additional_data": {}, 
+    "collection_type": "akselos/shellvf", 
+    "components": [
+      {
+        "boolean_data": {}, 
+        "docking_parameters": [
+          1.0, 
+          0.0, 
+          0.0, 
+          0.0, 
+          1.0, 
+          0.0, 
+          0.0, 
+          0.0, 
+          1.0, 
+          0.0, 
+          0.0, 
+          0.0
+        ], 
+        "edge_ports": [], 
+        "file_data": {}, 
+        "node_ports": [
+          {}, 
+          {}
+        ], 
+        "outputs": [], 
+        "parameter_groups_hint_names": {}, 
+        "parameters": {
+          "E_1": 0.06825, 
+          "h_1": 0.04, 
+          "nu_1": 0.3
+        }, 
+        "ports": [], 
+        "ref_component_type": "components/shellvfhermisphere", 
+        "sources": [
+          {
+            "name": "Self_Weight_1", 
+            "on": false, 
+            "parameters": {
+              "density_1": 7.698220249999999e-05
+            }
+          }
+        ], 
+        "tags": [], 
+        "uuid": "a8fadfb1ea8f4fbab9d6dec74ad0dc06"
+      }, 
+      {
+        "boolean_data": {}, 
+        "docking_parameters": [
+          1.0, 
+          0.0, 
+          0.0, 
+          0.0, 
+          1.0, 
+          0.0, 
+          0.0, 
+          0.0, 
+          1.0, 
+          10.0, 
+          0.0, 
+          0.0
+        ], 
+        "edge_ports": [], 
+        "file_data": {}, 
+        "node_ports": [
+          {}
+        ], 
+        "outputs": [], 
+        "parameter_groups_hint_names": {}, 
+        "parameters": {
+          "k": 5.0, 
+          "scale": 0.1000005
+        }, 
+        "ports": [], 
+        "ref_component_type": "/builtin/builtin_isolated_node", 
+        "sources": [
+          {
+            "name": "Self_Weight_1", 
+            "on": false, 
+            "parameters": {
+              "point_mass": 0.0
+            }
+          }, 
+          {
+            "name": "Point_Load_1", 
+            "on": true, 
+            "parameters": {
+              "point_load_x": 1e-09, 
+              "point_load_y": 0.0, 
+              "point_load_z": 0.0, 
+              "point_moment_x": 0.0, 
+              "point_moment_y": 0.0, 
+              "point_moment_z": 0.0
+            }
+          }
+        ], 
+        "tags": [], 
+        "uuid": "80b4913a37eb44eda957a798ccc66b1f"
+      }, 
+      {
+        "boolean_data": {}, 
+        "docking_parameters": [
+          1.0, 
+          0.0, 
+          0.0, 
+          0.0, 
+          1.0, 
+          0.0, 
+          0.0, 
+          0.0, 
+          1.0, 
+          -3.6415315207705135e-14, 
+          10.0, 
+          3.4638958368304884e-14
+        ], 
+        "edge_ports": [], 
+        "file_data": {}, 
+        "node_ports": [
+          {}
+        ], 
+        "outputs": [], 
+        "parameter_groups_hint_names": {}, 
+        "parameters": {
+          "k": 5.0, 
+          "scale": 0.1000005
+        }, 
+        "ports": [], 
+        "ref_component_type": "/builtin/builtin_isolated_node", 
+        "sources": [
+          {
+            "name": "Self_Weight_1", 
+            "on": false, 
+            "parameters": {
+              "point_mass": 0.0
+            }
+          }, 
+          {
+            "name": "Point_Load_1", 
+            "on": true, 
+            "parameters": {
+              "point_load_x": 0.0, 
+              "point_load_y": -1e-09, 
+              "point_load_z": 0.0, 
+              "point_moment_x": 0.0, 
+              "point_moment_y": 0.0, 
+              "point_moment_z": 0.0
+            }
+          }
+        ], 
+        "tags": [], 
+        "uuid": "4a3e3098162543e286622df0d470338c"
+      }
+    ], 
+    "plugin_data": {}, 
+    "port_constraints": [
+      {
+        "boolean_data": {}, 
+        "constraint_data": {}, 
+        "constraint_type": "direct", 
+        "port_id_data": [
+          {
+            "component_id": 0, 
+            "port_dimension": 0, 
+            "port_index": 1
+          }, 
+          {
+            "component_id": 2, 
+            "port_dimension": 0, 
+            "port_index": 0
+          }
+        ], 
+        "uuid": "5e8376bf52904d3da5007c836cc34b38"
+      }, 
+      {
+        "boolean_data": {}, 
+        "constraint_data": {
+          "z": 0.0
+        }, 
+        "constraint_type": "direct", 
+        "port_id_data": [
+          {
+            "component_id": 0, 
+            "port_dimension": 0, 
+            "port_index": 0
+          }, 
+          {
+            "component_id": 1, 
+            "port_dimension": 0, 
+            "port_index": 0
+          }
+        ], 
+        "uuid": "5e8376bf52904d3da5007c836cc34b38"
+      }
+    ], 
+    "solver_options_data": [
+      {
+        "boolean_data": {
+          "Set Max. DOF per port": false, 
+          "calculate_rb_fea_error_indicator": false, 
+          "compute_forces_and_moments": true, 
+          "include_materials_in_plot": false, 
+          "out_of_core": false, 
+          "symmetrize_scrbe_system_matrix": false, 
+          "use_component_datasets": true, 
+          "use_visualization_cache": false
+        }, 
+        "file_valued_data": {}, 
+        "int_valued_data": {}, 
+        "num_cores": 1, 
+        "optional_fields": [], 
+        "real_valued_data": {}, 
+        "solver_strategy": "rb", 
+        "solver_type": "rb_default_elasticity", 
+        "stored_selection_data": {}, 
+        "string_data": {
+          "linear_solver": "Direct (MUMPS)"
+        }
+      }, 
+      {
+        "boolean_data": {
+          "allow_nonconforming_port_meshes": false, 
+          "out_of_core": false, 
+          "use_global_coords_for_surface_constraints": false, 
+          "use_reduced_integration": false
+        }, 
+        "file_valued_data": {}, 
+        "int_valued_data": {}, 
+        "is_default": true, 
+        "num_cores": 1, 
+        "optional_fields": [], 
+        "real_valued_data": {}, 
+        "solver_strategy": "fea", 
+        "solver_type": "fe_elasticity_default", 
+        "stored_selection_data": {}, 
+        "string_data": {
+          "linear_solver": "Direct (MUMPS)"
+        }
+      }
+    ], 
+    "surface_contact_connections": []
+  }, 
+  "load_cases": [], 
+  "load_combinations": [], 
+  "multi_load_cases": [], 
+  "stored_selections": []
+}
